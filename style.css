@@ -1,0 +1,40 @@
+:root{
+    --bkg-color:#19133a;
+    --form-color:#373152;
+    --inout-color:#4b4663;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bkg-color);
+    text-align: center;
+ 
+}
+h1{
+    color: #fff;
+}
+form{
+    width: 300px;
+    height: 400px;
+    background-color: var(--form-color);
+    color: #fff;
+    display: inline-block;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center
+}
+i{
+    margin-top: 5rem;
+    font-size:6em ;
+    color: #FF595E;
+}
+#inputCuadrado{
+    background-color: var(--inout-color);
+    height: 1.6rem;
+    border-radius: 12px;
+}
+.elementForm{
+    max-width: 100%;
+    margin: 0.5rem;
+}

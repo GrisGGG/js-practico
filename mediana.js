@@ -9,7 +9,13 @@ function calcularMedia(lista){
     }
 
 function mediana(lista){
-    lista.sort();//ordena el array
+    lista.sort(function (a,b) {
+        return a - b;
+    }
+    
+
+    );//ordena el array
+    console.log(lista);
     const mitadLista = parseInt(lista.length / 2);
 
     let mediana;

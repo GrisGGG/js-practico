@@ -3,12 +3,17 @@ const listaCount = {};
 
 list.map(
     function(elemento){
-        if (listaCount[elemento]) {
-            listaCount[elemento] += 1;
+        if (listaCount[elemento]) { //de acuerdo a la posición del elemento si ya sse encuentra en el objeto
+            listaCount[elemento] += 1; //se sumara 1
         }else{
-            listaCount[elemento] =1
+            listaCount[elemento] =1// si no esta se pondra un uno
         }
     }
 )
 
-const lista1Array = Object.entries(listaCount);
+//entries convierte el objeto en array
+const lista1Array = Object.entries(listaCount).sort(function (a,b) {
+    return a [1] - b [1];
+});
+
+const moda = lista1Array[lista1Array.length - 1];
